@@ -4,6 +4,7 @@
             <div class="modal-container">
                 <div class="modal-header">
                     <h5 class="modal-title">Shopping cart</h5>
+                    <button class="btn btn-secondary" @click="$emit('close')">Close</button>
                 </div>
                 <div class="modal-body m-0">
                     <table class="table">
