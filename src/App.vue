@@ -1,23 +1,20 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
+  <b-container id="app" class="my-5">
+    <h1>My online store</h1>
+    <main-menu/>
     <router-view/>
-  </div>
+  </b-container>
 </template>
 
 <script>
+import MainMenu from '@/components/blocks/MainMenu.vue'
+
 export default {
+  components: {MainMenu},
   name: 'app'
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+  @import 'assets/css/general.scss';
 </style>
