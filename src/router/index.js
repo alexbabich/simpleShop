@@ -5,6 +5,8 @@ import HelloWorld from '@/components/HelloWorld'
 Vue.use(Router)
 
 export default new Router({
+  // TODO before upload to host remove comment
+  // mode: 'history',
   routes: [
     {
       path: '/',
