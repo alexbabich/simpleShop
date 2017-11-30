@@ -1,5 +1,5 @@
 <template>
-  <b-container>
+  <section>
     <div class="row">
       <div class="col-md-3">
         <ShoppingCart />
@@ -14,8 +14,7 @@
         :image="item.image"
         :price="item.price" />
     </div>
-    <!--{{ inCart }}-->
-  </b-container>
+  </section>
 </template>
 
 <script>

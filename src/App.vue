@@ -1,7 +1,7 @@
 <template>
   <b-container id="app" class="my-5">
-    <h1>My online store</h1>
     <main-menu/>
+    <h1>My online store</h1>
     <router-view/>
   </b-container>
 </template>

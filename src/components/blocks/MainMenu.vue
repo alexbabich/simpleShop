@@ -1,5 +1,5 @@
 <template>
-    <b-container class="mt-4 mb-5">
+    <section class="my-3">
         <b-navbar class="kt-menu-wrapper">
             <b-nav class="row justify-content-around">
                 <router-link :to="item.url" :key="item.id" v-for="item in menuList" :class="item.className" class="col-4 col-sm-3 kt-menu-item">
@@ -7,7 +7,7 @@
                 </router-link>
             </b-nav>
         </b-navbar>
-    </b-container>
+    </section>
 </template>
 
 <script>
