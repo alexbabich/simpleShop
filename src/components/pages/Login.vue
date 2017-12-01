@@ -25,7 +25,7 @@
         })
         .then(res => {
           if (this.email === user.email && this.password === user.password) {
-            this.$router.push('/')
+            this.$router.push('/upload')
             console.log('login true')
           } else {
             this.$router.push('/login')
