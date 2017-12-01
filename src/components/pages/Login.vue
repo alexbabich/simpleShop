@@ -7,6 +7,11 @@
 </template>
 
 <script>
+  const user = {
+    email: 'try',
+    password: '123'
+  }
+
   export default {
     name: 'Login',
     state: {
@@ -17,16 +22,23 @@
         this.$store.dispatch('login', {
           email: this.email,
           password: this.password
-        }).then(res => {
-          this.$router.push('/')
+        })
+        .then(res => {
+          if (this.email === user.email && this.password === user.password) {
+            this.$router.push('/')
+            console.log('login true')
+          } else {
+            this.$router.push('/login')
+            console.log('login error')
+          }
         })
       }
     },
     data () {
       return {
-        // todo need to add check for user admin
         email: '',
-        password: ''
+        password: '',
+        user: user
       }
     }
   }

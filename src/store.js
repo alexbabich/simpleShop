@@ -43,7 +43,7 @@ export default new Vuex.Store({
   },
   actions: {
     login ({state, commit, rootState}, creds) {
-      console.log('login...', creds)
+      console.log('login...')
       commit(LOGIN)
       return new Promise(resolve => {
         setTimeout(() => {
